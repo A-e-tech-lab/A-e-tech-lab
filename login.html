@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Agar Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome 🚀</h1>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="login()">Start</button>
+  </div>
+
+  <script>
+    function login() {
+      let name = document.getElementById("name").value;
+
+      if (name === "") {
+        alert("Enter your name!");
+        return;
+      }
+
+      localStorage.setItem("username", name);
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: white;
+  color: black;
+  margin: 10px auto;
+  width: 250px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 🌙 DARK MODE FIX */
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.dark-mode .container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.dark-mode li {
+  background: #2a2a2a;
+  color: white;
+}
+
+.dark-mode input {
+  background: #333;
+  color: white;
+}
+
+.dark-mode button {
+  background: #444;
+  color: white;
+}
+
+/* 💪 Quote */
+#quote {
+  font-style: italic;
+  margin: 10px;
+  color: #ffdd57;
+}
+.container {
+  margin-top: 60px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+button {
+  background: #4facfe;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

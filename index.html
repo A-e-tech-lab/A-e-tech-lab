@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agar Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <p id="welcome"></p>
+
+    <h1>📚 Study Planner</h1>
+
+    <p id="quote"></p>
+
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <button onclick="clearTasks()">Clear All</button>
+
+    <br><br>
+
+    <input type="text" id="taskInput" placeholder="Enter study task">
+    <input type="time" id="taskTime">
+    <button onclick="addTask()">Add Task</button>
+
+    <p id="progressText">Progress: 0%</p>
+    <progress id="progressBar" value="0" max="100"></progress>
+
+    <ul id="taskList"></ul>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
